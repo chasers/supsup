@@ -1,5 +1,5 @@
 defmodule Supsup.Extension do
-  use Supervisor, restart: :temporary
+  use Supervisor, restart: :transient
 
   @spec start_link(list()) :: {:error, any} | {:ok, pid}
   def start_link(args) do
